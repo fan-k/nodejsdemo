@@ -3,7 +3,7 @@
  * 
  */
 
- const mysql = require('mysql')
+//  const mysql = require('mysql')
 
  var lianjie = mysql.createConnection({
     host:'47.104.198.112',
