@@ -6,20 +6,19 @@
  const mysql = require('mysql')
 
  var lianjie = mysql.createConnection({
-    host:'localhost',
+    host:'47.104.198.112',
     user:'root',
-    password:'Mysql123..',
+    password:'5tgbhuYTGB',
     port:'3306',
-    database:'mysqltest',
+    database:'adm',
  })
  lianjie.connect()
 
- var sql = 'SELECT * FROM prize'
-
+ var sql = 'INSERT INTO activity_batch (id,batch_no,activity_id,ad_id) values (1,1,1,1)'
  lianjie.query(sql,function(error,result){
-     if(error)console.log(error)
+     if(error)console.log('error' + error)
      else
-        console.log(result)
+        console.log('success' + result)
  })
 
 // const mongoose = require('mongoose')

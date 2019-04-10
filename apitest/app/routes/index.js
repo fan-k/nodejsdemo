@@ -4,6 +4,10 @@ const express = require('express')
 const router = express.Router()
 
 router.get('/',function(req,res){
-    res.send('index')
+    res.json({
+        code:200,
+        msg:'注册成功',
+        data:'注册成功',
+    })
 })
 module.exports = router
